@@ -1,6 +1,6 @@
 {
   "name": "script-markdown",
-  "publisher": "script-markdown",
+  "publisher": "moftify",
   "displayName": "ScriptMarkDown",
   "description": "VOICEVOX Engineとリアルタイム連携する、台本・シナリオ執筆用(.smd)エディタ拡張機能です。",
   "version": "0.1.0",
