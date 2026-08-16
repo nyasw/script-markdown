@@ -2,8 +2,7 @@
 
 VOICEVOX Engine と連携してリアルタイムに読み上げながら、台本・シナリオ・脚本を書けるVS Code拡張機能です。
 
-<!-- TODO: 公開前にデモGIF/スクリーンショットを撮影してここに追加する -->
-<!-- ![ScriptMarkDown Demo](resources/demo.gif) -->
+![ScriptMarkDown Demo](resources/demo.gif)
 
 ## 概要
 

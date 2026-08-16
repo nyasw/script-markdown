@@ -2,9 +2,10 @@
   "name": "script-markdown",
   "publisher": "script-markdown",
   "displayName": "ScriptMarkDown",
-  "description": "ScriptMarkDown (.smd) screenplay editor with VOICEVOX Engine real-time audio playback.",
+  "description": "VOICEVOX Engineとリアルタイム連携する、台本・シナリオ執筆用(.smd)エディタ拡張機能です。",
   "version": "0.1.0",
   "license": "MIT",
+  "icon": "resources/smd_icon.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/nyasw/script-markdown.git"
@@ -80,7 +81,7 @@
     },
     "commands": [
       { "command": "smd.openAudioEngine", "title": "ScriptMarkDown: Open Audio Engine Player Tab", "icon": "$(unmute)" },
-      { "command": "smd.playScriptFromCurrentLine", "title": "再生", "icon": { "light": "./resources/play-green.svg", "dark": "./resources/play-green.svg" } },
+      { "command": "smd.playScriptFromCurrentLine", "title": "再生" },
       { "command": "smd.stopAudio", "title": "停止", "icon": "$(debug-stop)" },
       { "command": "smd.suggestNextAudio", "title": "ScriptMarkDown: Suggest Next Audio Preview" },
       { "command": "smd.suggestPrevAudio", "title": "ScriptMarkDown: Suggest Prev Audio Preview" },

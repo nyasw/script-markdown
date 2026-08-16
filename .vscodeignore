@@ -7,3 +7,4 @@ tsconfig.json
 package-lock.json
 **/*.map
 **/.DS_Store
+resources/*.ai
