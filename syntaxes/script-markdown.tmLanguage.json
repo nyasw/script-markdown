@@ -1,0 +1,132 @@
+{
+  "name": "script-markdown",
+  "scopeName": "source.script-markdown",
+  "patterns": [
+    { "include": "#comment" },
+    { "include": "#heading" },
+    { "include": "#telop" },
+    { "include": "#preset_directive" },
+    { "include": "#directive_line" },
+    { "include": "#speaker_line" },
+    { "include": "#line_elements" }
+  ],
+  "repository": {
+    "comment": {
+      "patterns": [
+        {
+          "name": "comment.block.script-markdown",
+          "begin": "/\\*",
+          "beginCaptures": {
+            "0": { "name": "punctuation.definition.comment.begin.script-markdown" }
+          },
+          "end": "\\*/",
+          "endCaptures": {
+            "0": { "name": "punctuation.definition.comment.end.script-markdown" }
+          },
+          "patterns": []
+        },
+        {
+          "name": "comment.line.shebang.script-markdown",
+          "match": "^#!.*$"
+        },
+        {
+          "name": "comment.line.double-slash.script-markdown",
+          "match": "(?:^|\\s)//.*$"
+        }
+      ]
+    },
+    "heading": {
+      "patterns": [
+        {
+          "name": "markup.heading.script-markdown",
+          "match": "^\\s*(#{1,6})\\s+(.*)$",
+          "captures": {
+            "1": { "name": "punctuation.definition.heading.script-markdown" },
+            "2": { "name": "entity.name.section.script-markdown" }
+          }
+        }
+      ]
+    },
+    "telop": {
+      "patterns": [
+        {
+          "name": "markup.quote.telop.script-markdown",
+          "match": "^\\s*(>)(.*)$",
+          "captures": {
+            "1": { "name": "punctuation.definition.quote.telop.script-markdown" },
+            "2": { "name": "string.unquoted.telop.script-markdown" }
+          }
+        }
+      ]
+    },
+    "preset_directive": {
+      "patterns": [
+        {
+          "name": "meta.directive.preset.script-markdown",
+          "match": "^\\s*(preset)\\.(all|bgm|se|['\"][^'\"]+['\"]|[^.\\s]+)((?:\\.(?:speed|pitch|intonation|volume|vol|bgmVol|bgm_vol|seVol|se_vol|pause_length|pauselength|pre_silence|presilence|post_silence|postsilence|font|tatie)\\([^)]*\\))+)",
+          "captures": {
+            "1": { "name": "keyword.control.directive.preset.script-markdown" },
+            "2": { "name": "variable.parameter.speaker.script-markdown" },
+            "3": { "name": "entity.name.function.directive.script-markdown" }
+          }
+        }
+      ]
+    },
+    "directive_line": {
+      "patterns": [
+        {
+          "name": "meta.directive.event.script-markdown",
+          "match": "^\\s*\\.(se|bgm|wait|bgmVol|bgm_vol|seVol|se_vol)\\(([^)]*)\\)",
+          "captures": {
+            "1": { "name": "entity.name.function.directive.script-markdown" },
+            "2": { "name": "variable.parameter.script-markdown" }
+          }
+        }
+      ]
+    },
+    "speaker_line": {
+      "patterns": [
+        {
+          "name": "meta.speaker.line.script-markdown",
+          "match": "^([^>\\n\\.]+)((?:\\.[^>\\n]+)?)(>)",
+          "captures": {
+            "1": { "name": "entity.name.type.speaker.script-markdown" },
+            "2": { "name": "entity.name.type.style.script-markdown" },
+            "3": { "name": "punctuation.separator.speaker.script-markdown" }
+          }
+        }
+      ]
+    },
+    "line_elements": {
+      "patterns": [
+        { "include": "#comment" },
+        { "include": "#ruby" },
+        { "include": "#escape" },
+        { "include": "#chained_method" }
+      ]
+    },
+    "ruby": {
+      "name": "meta.ruby.script-markdown",
+      "match": "(\\[)([^\\]|]+)(\\|)([^\\]]+)(\\])",
+      "captures": {
+        "1": { "name": "punctuation.definition.ruby.begin.script-markdown" },
+        "2": { "name": "string.other.ruby.surface.script-markdown" },
+        "3": { "name": "punctuation.separator.ruby.script-markdown" },
+        "4": { "name": "string.other.ruby.reading.script-markdown" },
+        "5": { "name": "punctuation.definition.ruby.end.script-markdown" }
+      }
+    },
+    "escape": {
+      "name": "constant.character.escape.script-markdown",
+      "match": "\\\\[nN]"
+    },
+    "chained_method": {
+      "name": "meta.chained.method.script-markdown",
+      "match": "(\\.[a-zA-Z_][a-zA-Z0-9_]*)\\(([^)]*)\\)",
+      "captures": {
+        "1": { "name": "entity.name.function.chained.script-markdown" },
+        "2": { "name": "variable.parameter.script-markdown" }
+      }
+    }
+  }
+}

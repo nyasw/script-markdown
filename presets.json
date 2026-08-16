@@ -1,0 +1,385 @@
+{
+  "version": "1.0",
+  "shortcuts": {
+    "1": "四国めたん> ",
+    "2": "ずんだもん> ",
+    "3": "春日部つむぎ> ",
+    "4": "雨晴はう> ",
+    "5": "波音リツ> ",
+    "6": "玄野武宏> ",
+    "7": "白上虎太郎> ",
+    "8": "青山龍星> ",
+    "9": "冥鳴ひまり> "
+  },
+  "speakers": [
+    {
+      "id": "shikoku_metan",
+      "name": "四国めたん",
+      "aliases": ["四国めたん", "めたん", "metan", "shikoku_metan"],
+      "styles": ["ノーマル", "あまあま", "ツンツン", "セクシー", "ささやき", "ヒソヒソ"],
+      "styleIds": [2, 0, 6, 4, 36, 37],
+      "defaultStyle": "ノーマル",
+      "color": "#ff25f0"
+    },
+    {
+      "id": "zundamon",
+      "name": "ずんだもん",
+      "aliases": ["ずんだもん", "ずんだ", "zunda", "zundamon", "zn"],
+      "styles": ["ノーマル", "あまあま", "ツンツン", "セクシー", "ささやき", "ヒソヒソ", "ヘロヘロ", "なみだめ"],
+      "styleIds": [3, 1, 7, 5, 22, 38, 75, 76],
+      "defaultStyle": "ノーマル",
+      "color": "#38d9a9"
+    },
+    {
+      "id": "kasukabe_tsumugi",
+      "name": "春日部つむぎ",
+      "aliases": ["春日部つむぎ", "つむぎ", "tsumugi"],
+      "styles": ["ノーマル"],
+      "styleIds": [8],
+      "defaultStyle": "ノーマル",
+      "color": "#ff922b"
+    },
+    {
+      "id": "amehare_hau",
+      "name": "雨晴はう",
+      "aliases": ["雨晴はう", "はう", "hau"],
+      "styles": ["ノーマル"],
+      "styleIds": [10],
+      "defaultStyle": "ノーマル",
+      "color": "#4dabf7"
+    },
+    {
+      "id": "namine_ritsu",
+      "name": "波音リツ",
+      "aliases": ["波音リツ", "リツ", "ritsu"],
+      "styles": ["ノーマル", "クイーン"],
+      "styleIds": [9, 65],
+      "defaultStyle": "ノーマル",
+      "color": "#e03131"
+    },
+    {
+      "id": "kurono_takehiro",
+      "name": "玄野武宏",
+      "aliases": ["玄野武宏", "玄野", "takehiro"],
+      "styles": ["ノーマル", "喜び", "ツンギレ", "悲しみ"],
+      "styleIds": [11, 39, 40, 41],
+      "defaultStyle": "ノーマル",
+      "color": "#2f9e44"
+    },
+    {
+      "id": "shirakami_kotaro",
+      "name": "白上虎太郎",
+      "aliases": ["白上虎太郎", "虎太郎", "kotaro"],
+      "styles": ["ふつう", "わーい", "びくびく", "おこ", "びえーん"],
+      "styleIds": [12, 32, 33, 34, 35],
+      "defaultStyle": "ふつう",
+      "color": "#94d82d"
+    },
+    {
+      "id": "aoyama_ryusei",
+      "name": "青山龍星",
+      "aliases": ["青山龍星", "龍星", "ryusei"],
+      "styles": ["ノーマル", "熱血", "不機嫌", "喜び", "しっとり", "かなしみ", "囁き"],
+      "styleIds": [13, 81, 82, 83, 84, 85, 86],
+      "defaultStyle": "ノーマル",
+      "color": "#15aabf"
+    },
+    {
+      "id": "meimei_himari",
+      "name": "冥鳴ひまり",
+      "aliases": ["冥鳴ひまり", "ひまり", "himari"],
+      "styles": ["ノーマル"],
+      "styleIds": [14],
+      "defaultStyle": "ノーマル",
+      "color": "#ae3ec9"
+    },
+    {
+      "id": "kyushu_sora",
+      "name": "九州そら",
+      "aliases": ["九州そら", "そら", "sora"],
+      "styles": ["ノーマル", "あまあま", "ツンツン", "セクシー", "ささやき"],
+      "styleIds": [16, 15, 18, 17, 19],
+      "defaultStyle": "ノーマル",
+      "color": "#c2255c"
+    },
+    {
+      "id": "mochinoki_hayato",
+      "name": "モチノキハヤト",
+      "aliases": ["モチノキハヤト", "ハヤト", "hayato"],
+      "styles": ["ノーマル"],
+      "styleIds": [20],
+      "defaultStyle": "ノーマル",
+      "color": "#fd7e14"
+    },
+    {
+      "id": "kenzaki_mesuo",
+      "name": "剣崎雌雄",
+      "aliases": ["剣崎雌雄", "雌雄", "mesuo"],
+      "styles": ["ノーマル"],
+      "styleIds": [21],
+      "defaultStyle": "ノーマル",
+      "color": "#2f9e44"
+    },
+    {
+      "id": "mochiko_san",
+      "name": "もち子さん",
+      "aliases": ["もち子さん", "もち子", "mochiko"],
+      "styles": ["ノーマル", "セクシー／あん子", "泣き", "怒り", "喜び", "のんびり"],
+      "styleIds": [20, 66, 77, 78, 79, 80],
+      "defaultStyle": "ノーマル",
+      "color": "#868e96"
+    },
+    {
+      "id": "white_cul",
+      "name": "WhiteCUL",
+      "aliases": ["WhiteCUL", "whitecul", "カル"],
+      "styles": ["ノーマル", "たのしい", "かなしい", "びえーん"],
+      "styleIds": [23, 24, 25, 26],
+      "defaultStyle": "ノーマル",
+      "color": "#22b8cf"
+    },
+    {
+      "id": "goki",
+      "name": "後鬼",
+      "aliases": ["後鬼", "goki"],
+      "styles": ["人間ver.", "ぬいぐるみver.", "人間（怒り）ver.", "鬼ver."],
+      "styleIds": [27, 28, 87, 88],
+      "defaultStyle": "人間ver.",
+      "color": "#1971c2"
+    },
+    {
+      "id": "no7",
+      "name": "No.7",
+      "aliases": ["No.7", "no7", "ナンバーセブン"],
+      "styles": ["ノーマル", "アナウンス", "読み聞かせ"],
+      "styleIds": [29, 30, 31],
+      "defaultStyle": "ノーマル",
+      "color": "#8e44ad"
+    },
+    {
+      "id": "chibi_shiki_jii",
+      "name": "ちび式じい",
+      "aliases": ["ちび式じい", "式じい", "jii"],
+      "styles": ["ノーマル"],
+      "styleIds": [42],
+      "defaultStyle": "ノーマル",
+      "color": "#3bc9db"
+    },
+    {
+      "id": "ouka_miko",
+      "name": "櫻歌ミコ",
+      "aliases": ["櫻歌ミコ", "ミコ", "miko"],
+      "styles": ["ノーマル", "第二形態", "ロリ"],
+      "styleIds": [43, 44, 45],
+      "defaultStyle": "ノーマル",
+      "color": "#ff8787"
+    },
+    {
+      "id": "sayo",
+      "name": "小夜/SAYO",
+      "aliases": ["小夜/SAYO", "小夜", "sayo"],
+      "styles": ["ノーマル"],
+      "styleIds": [46],
+      "defaultStyle": "ノーマル",
+      "color": "#868e96"
+    },
+    {
+      "id": "nurse_robo_type_t",
+      "name": "ナースロボ＿タイプＴ",
+      "aliases": ["ナースロボ＿タイプＴ", "ナースロボ", "nurse"],
+      "styles": ["ノーマル", "楽々", "恐怖", "内緒話"],
+      "styleIds": [47, 48, 49, 50],
+      "defaultStyle": "ノーマル",
+      "color": "#f59f00"
+    },
+    {
+      "id": "benizakura",
+      "name": "†聖騎士 紅桜†",
+      "aliases": ["†聖騎士 紅桜†", "紅桜", "benizakura"],
+      "styles": ["ノーマル"],
+      "styleIds": [51],
+      "defaultStyle": "ノーマル",
+      "color": "#dc2626"
+    },
+    {
+      "id": "wakamatsu_akashi",
+      "name": "雀松朱司",
+      "aliases": ["雀松朱司", "わかまつあかし", "朱司", "wakamatsu_akashi", "akashi"],
+      "styles": ["ノーマル"],
+      "styleIds": [52],
+      "defaultStyle": "ノーマル",
+      "color": "#ef4444"
+    },
+    {
+      "id": "kigashima_sorin",
+      "name": "麒ヶ島宗麟",
+      "aliases": ["麒ヶ島宗麟", "きがしまそうりん", "宗麟", "kigashima_sorin", "sorin"],
+      "styles": ["ノーマル"],
+      "styleIds": [53],
+      "defaultStyle": "ノーマル",
+      "color": "#d69e2e"
+    },
+    {
+      "id": "haruka_nana",
+      "name": "春歌ナナ",
+      "aliases": ["春歌ナナ", "ナナ", "nana", "haruka"],
+      "styles": ["ノーマル"],
+      "styleIds": [54],
+      "defaultStyle": "ノーマル",
+      "color": "#ed64a6"
+    },
+    {
+      "id": "nekotsukai_aru",
+      "name": "猫使アル",
+      "aliases": ["猫使アル", "アル", "aru"],
+      "styles": ["ノーマル", "おちつき", "うきうき", "つよつよ", "へろへろ"],
+      "styleIds": [55, 56, 57, 110, 111],
+      "defaultStyle": "ノーマル",
+      "color": "#ef4444"
+    },
+    {
+      "id": "nekotsukai_bii",
+      "name": "猫使ビィ",
+      "aliases": ["猫使ビィ", "ビィ", "bii"],
+      "styles": ["ノーマル", "おちつき", "人見知り", "つよつよ"],
+      "styleIds": [58, 59, 60, 112],
+      "defaultStyle": "ノーマル",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "chugoku_usagi",
+      "name": "中国うさぎ",
+      "aliases": ["中国うさぎ", "うさぎ", "chugoku_usagi", "usagi"],
+      "styles": ["ノーマル", "おどろき", "こわがり", "へろへろ"],
+      "styleIds": [61, 62, 63, 64],
+      "defaultStyle": "ノーマル",
+      "color": "#f03e3e"
+    },
+    {
+      "id": "kurita_maron",
+      "name": "栗田まろん",
+      "aliases": ["栗田まろん", "まろん", "maron", "kurita"],
+      "styles": ["ノーマル"],
+      "styleIds": [67],
+      "defaultStyle": "ノーマル",
+      "color": "#007a5e"
+    },
+    {
+      "id": "ierutan",
+      "name": "あいえるたん",
+      "aliases": ["あいえるたん", "ierutan"],
+      "styles": ["ノーマル"],
+      "styleIds": [68],
+      "defaultStyle": "ノーマル",
+      "color": "#f97316"
+    },
+    {
+      "id": "manbetsuhanamaru",
+      "name": "満別花丸",
+      "aliases": ["満別花丸", "花丸"],
+      "styles": ["ノーマル", "元気", "ささやき", "ぶりっ子", "ボーイ"],
+      "styleIds": [69, 70, 71, 72, 73],
+      "defaultStyle": "ノーマル",
+      "color": "#90ed11"
+    },
+    {
+      "id": "kotoyomi_nia",
+      "name": "琴詠ニア",
+      "aliases": ["琴詠ニア", "ことよみにあ", "ニア", "kotoyomi_nia", "nia"],
+      "styles": ["ノーマル"],
+      "styleIds": [74],
+      "defaultStyle": "ノーマル",
+      "color": "#f97316"
+    },
+    {
+      "id": "voidoll",
+      "name": "Voidoll",
+      "aliases": ["Voidoll", "voidoll"],
+      "styles": ["ノーマル"],
+      "styleIds": [89],
+      "defaultStyle": "ノーマル",
+      "color": "#41b883"
+    },
+    {
+      "id": "zonko",
+      "name": "ぞん子",
+      "aliases": ["ぞん子", "zonko"],
+      "styles": ["ノーマル", "低血圧", "覚醒", "実況風"],
+      "styleIds": [90, 91, 92, 93],
+      "defaultStyle": "ノーマル",
+      "color": "#9333ea"
+    },
+    {
+      "id": "chubu_tsurugi",
+      "name": "中部つるぎ",
+      "aliases": ["中部つるぎ", "つるぎ", "chubu_tsurugi"],
+      "styles": ["ノーマル", "怒り", "ヒソヒソ", "おどおど", "絶望と敗北"],
+      "styleIds": [94, 95, 96, 97, 98],
+      "defaultStyle": "ノーマル",
+      "color": "#3182ce"
+    },
+    {
+      "id": "rito",
+      "name": "離途",
+      "aliases": ["離途", "りと", "rito"],
+      "styles": ["ノーマル", "シリアス"],
+      "styleIds": [99, 101],
+      "defaultStyle": "ノーマル",
+      "color": "#805ad5"
+    },
+    {
+      "id": "kurosawa_kohaku",
+      "name": "黒沢冴白",
+      "aliases": ["黒沢冴白", "くろさわこはく", "冴白", "kurosawa_kohaku", "kohaku"],
+      "styles": ["ノーマル"],
+      "styleIds": [100],
+      "defaultStyle": "ノーマル",
+      "color": "#94a3b8"
+    },
+    {
+      "id": "yureichan",
+      "name": "ユーレイちゃん",
+      "aliases": ["ユーレイちゃん", "yureichan"],
+      "styles": ["ノーマル", "甘々", "哀しみ", "ささやき", "ツクモちゃん"],
+      "styleIds": [102, 103, 104, 105, 106],
+      "defaultStyle": "ノーマル",
+      "color": "#a0aec0"
+    },
+    {
+      "id": "tohoku_zunko",
+      "name": "東北ずん子",
+      "aliases": ["東北ずん子", "ずん子", "zunko"],
+      "styles": ["ノーマル"],
+      "styleIds": [107],
+      "defaultStyle": "ノーマル",
+      "color": "#48bb78"
+    },
+    {
+      "id": "tohoku_kiritan",
+      "name": "東北きりたん",
+      "aliases": ["東北きりたん", "きりたん", "kiritan"],
+      "styles": ["ノーマル"],
+      "styleIds": [108],
+      "defaultStyle": "ノーマル",
+      "color": "#ed8936"
+    },
+    {
+      "id": "tohoku_itako",
+      "name": "東北イタコ",
+      "aliases": ["東北イタコ", "イタコ", "itako"],
+      "styles": ["ノーマル"],
+      "styleIds": [109],
+      "defaultStyle": "ノーマル",
+      "color": "#9f7aea"
+    },
+    {
+      "id": "ankomon",
+      "name": "あんこもん",
+      "aliases": ["あんこもん", "ankomon"],
+      "styles": ["ノーマル", "つよつよ", "よわよわ", "けだるげ", "ささやき"],
+      "styleIds": [113, 114, 115, 116, 117],
+      "defaultStyle": "ノーマル",
+      "color": "#c97a3e"
+    }
+  ]
+}

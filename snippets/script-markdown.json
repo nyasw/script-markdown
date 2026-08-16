@@ -1,0 +1,7 @@
+{
+  "ScriptMarkDown Shebang Header": {
+    "prefix": ["!", "#!"],
+    "body": ["#!/usr/bin/env smd@1.0  --ScriptMarkDown--\n"],
+    "description": "ScriptMarkDown スクリプト言語標準シバンヘッダー (#!/usr/bin/env smd@1.0  --ScriptMarkDown--)"
+  }
+}

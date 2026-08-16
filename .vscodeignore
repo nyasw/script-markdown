@@ -1,0 +1,9 @@
+.vscode/**
+.vscode-test/**
+src/**
+.gitignore
+.vscodeignore
+tsconfig.json
+package-lock.json
+**/*.map
+**/.DS_Store

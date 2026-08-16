@@ -1,0 +1,201 @@
+{
+  "name": "script-markdown",
+  "publisher": "script-markdown",
+  "displayName": "ScriptMarkDown",
+  "description": "ScriptMarkDown (.smd) screenplay editor with VOICEVOX Engine real-time audio playback.",
+  "version": "0.1.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TODO-set-before-publish/script-markdown.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TODO-set-before-publish/script-markdown/issues"
+  },
+  "homepage": "https://github.com/TODO-set-before-publish/script-markdown#readme",
+  "keywords": [
+    "voicevox",
+    "screenplay",
+    "script",
+    "tts",
+    "japanese"
+  ],
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "script-markdown",
+        "aliases": [
+          "ScriptMarkDown",
+          "smd",
+          "script-markdown"
+        ],
+        "extensions": [
+          ".smd"
+        ],
+        "configuration": "./language-configuration.json",
+        "icon": {
+          "light": "./resources/smd-file-icon.svg",
+          "dark": "./resources/smd-file-icon.svg"
+        }
+      }
+    ],
+    "grammars": [
+      {
+        "language": "script-markdown",
+        "scopeName": "source.script-markdown",
+        "path": "./syntaxes/script-markdown.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "script-markdown",
+        "path": "./snippets/script-markdown.json"
+      }
+    ],
+    "viewsContainers": {
+      "panel": [
+        {
+          "id": "smdPanelContainer",
+          "title": "SMD Player",
+          "icon": "./resources/smd-file-icon.svg"
+        }
+      ]
+    },
+    "views": {
+      "smdPanelContainer": [
+        {
+          "type": "webview",
+          "id": "smdAudioEngineView",
+          "name": "SMD Player",
+          "icon": "./resources/smd-file-icon.svg"
+        }
+      ]
+    },
+    "commands": [
+      { "command": "smd.openAudioEngine", "title": "ScriptMarkDown: Open Audio Engine Player Tab", "icon": "$(unmute)" },
+      { "command": "smd.playScriptFromCurrentLine", "title": "再生", "icon": { "light": "./resources/play-green.svg", "dark": "./resources/play-green.svg" } },
+      { "command": "smd.stopAudio", "title": "停止", "icon": "$(debug-stop)" },
+      { "command": "smd.suggestNextAudio", "title": "ScriptMarkDown: Suggest Next Audio Preview" },
+      { "command": "smd.suggestPrevAudio", "title": "ScriptMarkDown: Suggest Prev Audio Preview" },
+      { "command": "smd.playCurrentLineVoice", "title": "ScriptMarkDown: Play VOICEVOX Engine Voice (Current Line)" },
+      { "command": "smd.insertSpeaker1", "title": "ScriptMarkDown: Insert Speaker 1 (四国めたん)" },
+      { "command": "smd.insertSpeaker2", "title": "ScriptMarkDown: Insert Speaker 2 (ずんだもん)" },
+      { "command": "smd.insertSpeaker3", "title": "ScriptMarkDown: Insert Speaker 3 (春日部つむぎ)" },
+      { "command": "smd.insertSpeaker4", "title": "ScriptMarkDown: Insert Speaker 4 (雨晴はう)" },
+      { "command": "smd.insertSpeaker5", "title": "ScriptMarkDown: Insert Speaker 5 (波音リツ)" },
+      { "command": "smd.insertSpeaker6", "title": "ScriptMarkDown: Insert Speaker 6 (玄野武宏)" },
+      { "command": "smd.insertSpeaker7", "title": "ScriptMarkDown: Insert Speaker 7 (白上虎太郎)" },
+      { "command": "smd.insertSpeaker8", "title": "ScriptMarkDown: Insert Speaker 8 (青山龍星)" },
+      { "command": "smd.insertSpeaker9", "title": "ScriptMarkDown: Insert Speaker 9 (冥鳴ひまり)" },
+      { "command": "smd.toggleSpeakerIcons", "title": "ScriptMarkDown: Toggle Speaker Icons (話者アイコン表示の切替)" },
+      { "command": "smd.bakeAndCopyText", "title": "ScriptMarkDown: ベイクしてコピー" },
+      { "command": "smd.exportToVoicevoxTxt", "title": "ScriptMarkDown: VOICEVOX用テキスト (.txt) へエクスポート" },
+      { "command": "smd.exportAvailableParams", "title": "ScriptMarkDown: 使用可能な書式・話者・SE/BGM一覧を出力 (available_param.yaml)" },
+      { "command": "smd.setupWorkspaceSettings", "title": "ScriptMarkDown: ワークスペース設定 (.vscode/settings.json) を作成・初期化" }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "smd.bakeAndCopyText",
+          "when": "editorLangId == script-markdown || editorLangId == markdown",
+          "group": "smd_tools@1"
+        },
+        {
+          "command": "smd.exportToVoicevoxTxt",
+          "when": "editorLangId == script-markdown || editorLangId == markdown",
+          "group": "smd_tools@2"
+        }
+      ]
+    },
+    "keybindings": [
+      { "command": "smd.suggestNextAudio", "key": "down", "mac": "down", "when": "suggestWidgetVisible && editorTextFocus && editorLangId == script-markdown" },
+      { "command": "smd.suggestPrevAudio", "key": "up", "mac": "up", "when": "suggestWidgetVisible && editorTextFocus && editorLangId == script-markdown" },
+      { "command": "smd.insertSpeaker1", "key": "ctrl+1", "mac": "cmd+1", "when": "editorTextFocus && editorLangId == script-markdown" },
+      { "command": "smd.insertSpeaker2", "key": "ctrl+2", "mac": "cmd+2", "when": "editorTextFocus && editorLangId == script-markdown" },
+      { "command": "smd.insertSpeaker3", "key": "ctrl+3", "mac": "cmd+3", "when": "editorTextFocus && editorLangId == script-markdown" },
+      { "command": "smd.insertSpeaker4", "key": "ctrl+4", "mac": "cmd+4", "when": "editorTextFocus && editorLangId == script-markdown" },
+      { "command": "smd.insertSpeaker5", "key": "ctrl+5", "mac": "cmd+5", "when": "editorTextFocus && editorLangId == script-markdown" },
+      { "command": "smd.insertSpeaker6", "key": "ctrl+6", "mac": "cmd+6", "when": "editorTextFocus && editorLangId == script-markdown" },
+      { "command": "smd.insertSpeaker7", "key": "ctrl+7", "mac": "cmd+7", "when": "editorTextFocus && editorLangId == script-markdown" },
+      { "command": "smd.insertSpeaker8", "key": "ctrl+8", "mac": "cmd+8", "when": "editorTextFocus && editorLangId == script-markdown" },
+      { "command": "smd.insertSpeaker9", "key": "ctrl+9", "mac": "cmd+9", "when": "editorTextFocus && editorLangId == script-markdown" },
+      { "command": "smd.playCurrentLineVoice", "key": "shift+enter", "mac": "shift+enter", "when": "editorTextFocus && editorLangId == script-markdown" }
+    ],
+    "configuration": {
+      "title": "ScriptMarkDown",
+      "properties": {
+        "smd.engineUrl": {
+          "type": "string",
+          "default": "http://localhost:50021",
+          "description": "VOICEVOX Engine の REST API サーバーURL (デフォルト: http://localhost:50021)",
+          "order": 1
+        },
+        "smd.seDir": {
+          "type": "string",
+          "default": "",
+          "description": "外部SE素材フォルダーの絶対パスディレクトリ (例: /Users/username/Sounds/SE)",
+          "order": 3
+        },
+        "smd.bgmDir": {
+          "type": "string",
+          "default": "",
+          "description": "外部BGM素材フォルダーの絶対パスディレクトリ (例: /Users/username/Music/BGM)",
+          "order": 4
+        },
+        "smd.tatieDir": {
+          "type": "string",
+          "default": "",
+          "description": "外部立ち絵素材フォルダーの絶対パスディレクトリ (例: /Users/username/Pictures/Tatie)",
+          "order": 5
+        },
+        "smd.showSpeakerIcons": {
+          "type": "boolean",
+          "default": true,
+          "description": "エディターの行頭ガター部に話者アイコン（顔グラフィック）を表示する",
+          "order": 6
+        },
+        "smd.shortcuts": {
+          "type": "object",
+          "default": {},
+          "description": "VS Code settings.json でショートカットキー割り当て(例: {\"1\": \"四国めたん> \"})を上書き設定します",
+          "order": 7
+        },
+        "smd.speakers": {
+          "type": "array",
+          "default": [],
+          "description": "VS Code settings.json で話者定義(スタイル名やstyleIdやカラーなど)を上書き追加・カスタマイズ設定します",
+          "order": 8
+        },
+        "smd.playingHighlightColor": {
+          "type": "string",
+          "default": "rgba(46, 204, 113, 0.45)",
+          "description": "現在音声再生中の行の目立つハイライトカラー (デフォルト: rgba(46, 204, 113, 0.45))",
+          "order": 9
+        },
+        "smd.synthesizingHighlightColor": {
+          "type": "string",
+          "default": "rgba(150, 150, 150, 0.12)",
+          "description": "音声合成・バッファ生成中の行の目立たない控えめなハイライトカラー (デフォルト: rgba(150, 150, 150, 0.12))",
+          "order": 10
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/vscode": "^1.90.0",
+    "typescript": "^5.4.0"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "iconDefinitions": {
+    "_smd_file": {
+      "iconPath": "./smd-file-icon.svg"
+    }
+  },
+  "fileExtensions": {
+    "smd": "_smd_file"
+  },
+  "languageIds": {
+    "script-markdown": "_smd_file"
+  }
+}

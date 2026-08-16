@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+out/
+dist/
+
+# Package outputs
+*.vsix
+
+# VS Code test / workspace artifacts
+.vscode-test/
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
